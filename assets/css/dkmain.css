@@ -1,0 +1,171 @@
+    main{
+        width:  1140px;
+        height: 500px;
+        
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            @media screen and (max-width: 767px){
+                width: 100%;
+                padding: 150px;
+                height: auto;
+            }
+
+        
+
+
+            .row{
+                width: 500px;
+                height: 400px;
+                box-shadow: 0px 20px 50px var(--color--black);
+                border-radius: 90px 10px   ;
+                @media screen and (max-width: 767px){
+                    width: 390px;
+                    height: auto;
+                }
+        
+                .boxcenter{
+                    width: 100%;
+                    height: auto;
+                    padding: 50px ;
+                    @media screen and (max-width: 767px){
+                        width: 100%;
+                        height: auto;
+                        padding: 20px;
+                    }
+
+
+                    h1{
+
+                        font-size: 34px;
+                        text-align: center;
+                        padding-bottom: 20px;
+                        color: var(--color--black);
+                        letter-spacing: 2px;
+                        font-family: 'Times New Roman', Times, serif    ;
+                        @media screen and (max-width: 767px){
+                            font-size: 25px;
+                            padding-bottom: 10px;
+
+                        }
+                    }
+                    
+
+                    .taikhoan{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px;
+
+                    
+                        .email{
+
+                            input{
+                                background-color: var(--color--input);
+                                font-size: 15px;
+                                width: 300px;
+                                height: 40px;
+                                border: 0;
+                                outline: 0;
+                                border-bottom: 2px solid var(--color--green);
+                                border-radius: 10px 1px;
+                                &:hover{
+                                    box-shadow: 0px 0px 10px var(--color--green);
+                                }
+                                @media screen and (max-width: 767px){
+                                    width: 200px;
+                                    font-size: 13px;
+
+                                }
+                            }
+                        }
+                    }
+                    .matkhau{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px;
+
+                        .password{
+
+                            input{
+                                background-color: var(--color--input);
+                                width: 300px;
+                                height: 40px;
+                                border: 0;
+                                outline: 0;
+                                font-size: 15px;
+                                border-radius: 10px 1px;
+                                border-bottom: 2px solid var(--color--green);
+                                &:hover{
+                                    box-shadow: 0px 0px 10px var(--color--green);
+                                }
+                                @media screen and (max-width: 767px){
+                                    width: 200px;
+                                    font-size: 13px;
+
+                                }
+        
+                            }
+                        }
+                    }
+                    .matkhau2{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px;
+                        .password2{
+        
+                            input{
+                                background-color: var(--color--input);
+                                width: 300px;
+                                height: 40px;
+                                border: 0;
+                                font-size: 15px;
+                                outline: 0;
+                                border-radius: 10px 1px;
+                                &:hover{
+                                    box-shadow: 0px 0px 10px var(--color--green);
+                                }
+                                border-bottom: 2px solid var(--color--green);
+
+                                @media screen and (max-width: 767px){
+                                    width: 200px;
+                                    font-size: 13px;
+                                }
+        
+                            }
+                        }
+                    }
+
+                    }
+                }
+                
+        
+                .btn-1{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                a{
+                    input{
+                        width: 110px;
+                        height: 35px;
+                        border-radius: 40px 80px;
+                        margin: 5px;
+                        background-color: var(--color--input);
+
+                        transition: all 2s ease;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+                }
+                    
+            }
+        }
