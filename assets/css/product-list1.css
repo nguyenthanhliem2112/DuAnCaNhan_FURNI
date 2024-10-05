@@ -1,114 +1,91 @@
+.product-list1 {
+  width: 1190px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  margin-left: 163px;
 
-.product-list1 { 
-    width: 1190px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    margin-top: 10px;
-    margin-left: 163px;
-    
-    @media screen and (max-width: 767px){
-        width: 100%;
-        display: block;
-        margin-left: 0;
-      }
-      @media screen and (min-width: 767px) and (max-width: 1199px){
-        
-        width: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin-left: 0px;
-        
-       }
-    .product {
-        width: 388px;
-        height: 240px;
-        padding: 10px 10px;
-        background: url(../img/bonganh1.png) no-repeat center;
-        @media screen and (max-width: 767px){
-            width: 100%;
-            display: block;
-            margin-left: 0;
-          }
-          @media screen and (min-width: 767px) and (max-width: 1199px){
-            width: auto;
-            height: 230px;
-            
-           }
-            
-      
+    grid-template-columns: 50% 50%;
+    margin-left: 0px;
+  }
+  .product {
+    width: 388px;
+    height: 240px;
+    padding: 10px 10px;
+    background: url(../img/bonganh1.png) no-repeat center;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      display: block;
+      margin-left: 0;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      width: auto;
+      height: 230px;
+    }
 
+    .product-1 {
+      height: auto;
+      display: flex;
+      justify-content: center;
 
-        .product-1 {
-            height: auto;
-            display: flex;
-            justify-content: center;
-            
-            background: linear-gradient(to bottom,  #e1e1e1 0%,#ffffff 100%);
+      background: linear-gradient(to bottom, #e1e1e1 0%, #ffffff 100%);
 
-            .content-product {
-                height: auto;
-                 
+      .content-product {
+        height: auto;
 
-                
-                h2 {
-                    font-size: 40px;
-                    font-family: "UTM_HelvetIns";
-                    color: var(--color--black);
-                    margin-bottom:10px ;
-                    margin-left: 20px;
-                    margin-top: 20px;
-                   
-
-                }
-                p { 
-                    text-align: justify;
-                    font-size: 12px;
-                    letter-spacing: 1px;
-                    margin-left: 20px;
-                    margin-right: 5px;
-               
-
-                }
-                a{
-                    width: 40px;
-                    height: 30px;
-                    img{
-                        margin-top: 5px;
-
-                        transition: all 1s ease;
-                        &:hover{
-                            transform: scale(1.1);
-
-                        } 
-
-
-                    }
-                }
-            }
-            .product-img {
-                height: auto;
-
-
-                a{
-                    width: 40px;
-                    img{
-                        width: 150px ;
-                        height: 150px;
-                        margin-top: 35PX;
-                        margin-right: 10px ;
-                        transition: all 1s ease;
-                        &:hover{
-                            transform: scale(1.2);
-
-                        }
-                      
-                        
-
-                    }
-                }
-
-            }
+        h2 {
+          font-size: 40px;
+          font-family: "UTM_HelvetIns";
+          color: var(--color--black);
+          margin-bottom: 10px;
+          margin-left: 20px;
+          margin-top: 20px;
         }
-    } 
-}
+        p {
+          text-align: justify;
+          font-size: 12px;
+          letter-spacing: 1px;
+          margin-left: 20px;
+          margin-right: 5px;
+        }
+        a {
+          width: 40px;
+          height: 30px;
+          img {
+            margin-top: 5px;
 
+            transition: all 1s ease;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      .product-img {
+        height: auto;
+
+        a {
+          width: 40px;
+          img {
+            width: 150px;
+            height: 150px;
+            margin-top: 35px;
+            margin-right: 10px;
+            transition: all 1s ease;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

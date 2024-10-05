@@ -1,262 +1,233 @@
+.row {
+  width: 1240px;
+  height: auto;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    display: block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+  }
 
+  form {
+    .noidung {
+      display: block;
 
-    .row{
-        width: 1240px;
-        height: auto;
-        @media screen and (max-width: 767px){
+      padding: 40px 20px;
+      width: 100%;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 20px 0;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 20px 0px;
+        width: 100%;
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        img {
+          width: 50px;
+        }
+      }
+      .xincamon {
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        color: var(--color--green);
+      }
+
+      .tongnoidung {
+        display: flex;
+
+        gap: 20px;
+        .noidungsanphamm {
+          display: block;
+          padding: 10px 10px;
+          height: auto;
+          width: 57%;
+          border: 1px solid var(--color--input);
+          margin-bottom: 20px;
+          .tren {
+            width: 100%;
+            display: flex;
+            gap: 160px;
+            margin-left: 40px;
+            height: 65%;
+            table {
+              margin-left: 3px;
+              display: flex;
+              tr {
+                display: grid;
+                grid-template-columns: 100%;
+
+                margin-top: 10px;
+                th {
+                  font-size: 20px;
+                  margin-bottom: 20px;
+                }
+                td {
+                  padding: 7px 0px;
+
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          .duoi {
+            display: flex;
+            gap: 120px;
+            margin-left: 40px;
+            width: 100%;
+
+            table {
+              display: flex;
+              tr {
+                display: grid;
+                grid-template-columns: 100%;
+
+                margin-top: 10px;
+                th {
+                  font-size: 20px;
+                  display: grid;
+                  margin-bottom: 20px;
+                }
+                td {
+                  padding: 5px 2px;
+
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+        .right {
+          width: 37%;
+          height: auto;
+          border: 1px solid var(--color--input);
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+          @media screen and (min-width: 768px) and (max-width: 1199px) {
             width: 100%;
             height: auto;
-            margin-left: 0;
-            display: block;
-        }
-        @media screen and (min-width: 768px) and (max-width: 1199px){
-            display: block;
-            margin-left: 0px;
+          }
+
+          .noidung1 {
+            height: auto;
             width: 100%;
-        } 
-
-            
-            form{
-                .noidung{
-                    display: block;
-    
-                    padding: 40px 20px;      
-                    width: 100%;
-                    @media screen and (max-width: 767px){
-                        width: 100%;
-                        padding: 20px 0;
-                    }
-                    @media screen and (min-width: 768px) and (max-width: 1199px){
-                        padding: 20px 0px;
-                        width: 100%;
-                    } 
-                    h2{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 10px;
-                        img{
-                            width: 50px;
-                        }
-                    }
-                    .xincamon{
-                        margin-right: 20px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 50px;
-                        color: var(--color--green);
-                    }
-                   
-                    .tongnoidung{
-                        display: flex;
-    
-                        gap: 20px;
-                        .noidungsanphamm{
-                        
-                            display: block;
-                            padding: 10px 10px;
-                            height: auto;
-                            width: 57%;
-                            border: 1px solid var(--color--input);
-                            margin-bottom: 20px;
-                            .tren{
-                                width: 100%;
-                                display: flex;
-                                gap: 160px;
-                                margin-left: 40px;
-                                height: 65%;
-                                table{
-                                    margin-left: 3px;
-                                    display: flex;
-                                    tr{
-                                        display: grid;
-                                        grid-template-columns: 100%;
-                
-                                        margin-top: 10px;
-                                        th{
-                                            font-size: 20px;
-                                            margin-bottom: 20px;
-                                           
-                                        }
-                                        td{
-                                            padding: 7px 0px;
-        
-                                            font-size: 16px;
-                
-                                        }
-                                    }
-                                }
-                            }
-                            .duoi {
-                                display: flex;
-                                gap: 120px;
-                                margin-left: 40px;
-                                width: 100%;
-        
-                                table{
-                                    display: flex;
-                                    tr{
-                                        display: grid;
-                                        grid-template-columns: 100%;
-                
-                                        margin-top: 10px;
-                                        th{
-                                            font-size: 20px;
-                                            display: grid;
-                                            margin-bottom: 20px;
-        
-                                           
-                                        }
-                                        td{
-                                            padding: 5px 2px;
-                
-                                            font-size: 16px;
-                
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    .right{
-                        width: 37%;
-                        height:  auto;
-                        border: 1px solid var(--color--input);
-                        @media screen and (max-width: 767px){
-                            width: 100%;
-                        }
-                       @media screen and (min-width: 768px) and (max-width: 1199px){
-                            width: 100%;
-                            height: auto;
-            
-                       } 
-            
-                        .noidung1{
-                            height: auto;
-                            width: 100%;
-                            margin-left: 20px;
-                            padding: 10px 10px;
-                            h2{
-            
-            
-                            }
-                            .tieudee{
-                                display: flex;
-                                align-items: center;
-                                span{
-                                    font-size: 16px;
-                                    margin-left: 5px;
-                                }
-                            }
-                        
-                         
-                            
-                            .tongcong{
-                                display: flex;
-                                padding-top: 30px;
-                                gap: 120px;
-                        
-                                span{
-                                    font-size: 20px;
-                                }
-                        
-                                strong{
-                                    font-size: 22px;
-                                    color:var(--color--red)
-                                }
-                            }
-                      
-                            
-                        
-                            h2{
-                                
-                                margin-bottom: 20px;
-            
-                            }
-                       
-                            .sanphamdangmua{
-                                width: 90%;
-                                height: auto;
-                                border-bottom: 1px solid var(--color--input);
-            
-                                .sanpham{
-                                    margin-top: 10px;
-            
-                                    display: flex;
-                                    align-items: center;
-                                    border-bottom: 1px solid var(--color--input);
-            
-                                    img{
-                                        width: 90px;
-                                        height: 80px;
-                                    }
-                                    p{
-                                        font-size: 12px;
-                                        margin: 5px;
-                                        @media screen and (max-width: 767px){
-                                            font-size: 13px;    
-                                        }
-                                            @media screen and (min-width: 768px) and (max-width: 1199px){
-                                        
-                                            } 
-                                    }
-                                    strong{
-                                        font-size: 14px;
-                                        font-weight: 100;
-                                        margin-left: 50px;
-                                        color: var(--color--redfake);
-            
-                                    }
-                                }
-                            }
-                       
-                            .vanchuyenn{
-                                margin-top: 20px;
-                                display: flex;
-                                gap: 130px;
-                                span{
-                                    font-size: 14px;
-                                }
-                                p{
-                                    font-size: 12px;
-                                }
-                            }
-                                
-                        }
-                    }
-                    }
-        
-                        a{
-                            height: 40px;
-                            text-transform: uppercase;
-                            padding: 10px;
-                            font-size: 20px;
-                            font-weight: bold;
-                            margin-left: 62vh;
-                            text-decoration: none;
-                            background-color: var(--color--green);
-                            color: var(--color--white);
-                            border: none;
-
-                            @media screen and (max-width: 767px){
-                                font-size: 17px;
-                                margin-left: 0px;
-                            }
-                            @media screen and (min-width: 768px) and (max-width: 1199px){
-                                margin-left: 50px;
-                            } 
-    
-    
-    
-                        }
-                       
-                    }
+            margin-left: 20px;
+            padding: 10px 10px;
+            h2 {
             }
+            .tieudee {
+              display: flex;
+              align-items: center;
+              span {
+                font-size: 16px;
+                margin-left: 5px;
+              }
+            }
+
+            .tongcong {
+              display: flex;
+              padding-top: 30px;
+              gap: 120px;
+
+              span {
+                font-size: 20px;
+              }
+
+              strong {
+                font-size: 22px;
+                color: var(--color--red);
+              }
+            }
+
+            h2 {
+              margin-bottom: 20px;
+            }
+
+            .sanphamdangmua {
+              width: 90%;
+              height: auto;
+              border-bottom: 1px solid var(--color--input);
+
+              .sanpham {
+                margin-top: 10px;
+
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid var(--color--input);
+
+                img {
+                  width: 90px;
+                  height: 80px;
+                }
+                p {
+                  font-size: 12px;
+                  margin: 5px;
+                  @media screen and (max-width: 767px) {
+                    font-size: 13px;
+                  }
+                  @media screen and (min-width: 768px) and (max-width: 1199px) {
+                  }
+                }
+                strong {
+                  font-size: 14px;
+                  font-weight: 100;
+                  margin-left: 50px;
+                  color: var(--color--redfake);
+                }
+              }
+            }
+
+            .vanchuyenn {
+              margin-top: 20px;
+              display: flex;
+              gap: 130px;
+              span {
+                font-size: 14px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
         }
-        .hoanthanh{
-            margin-top: 40px;
+      }
+
+      a {
+        height: 40px;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 62vh;
+        text-decoration: none;
+        background-color: var(--color--green);
+        color: var(--color--white);
+        border: none;
+
+        @media screen and (max-width: 767px) {
+          font-size: 17px;
+          margin-left: 0px;
         }
-                
-            
-       
-        
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+.hoanthanh {
+  margin-top: 40px;
+}
